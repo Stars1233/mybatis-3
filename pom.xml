@@ -22,7 +22,7 @@
   <parent>
     <groupId>org.mybatis</groupId>
     <artifactId>mybatis-parent</artifactId>
-    <version>44</version>
+    <version>45</version>
     <relativePath />
   </parent>
 
@@ -135,8 +135,8 @@
     <derby.version>10.17.1.0</derby.version>
     <log4j.version>2.23.1</log4j.version>
     <mockito.version>5.12.0</mockito.version>
-    <mssql-jdbc.version>12.6.2.jre11</mssql-jdbc.version>
-    <testcontainers.version>1.20.0</testcontainers.version>
+    <mssql-jdbc.version>12.8.0.jre11</mssql-jdbc.version>
+    <testcontainers.version>1.20.1</testcontainers.version>
 
     <!-- Add slow test groups here and annotate classes similar to @Tag('groupName'). -->
     <!-- Excluded groups are ran on github ci, to force here, pass -d"excludedGroups=" -->
@@ -334,7 +334,7 @@
     <dependency>
       <groupId>org.slf4j</groupId>
       <artifactId>slf4j-api</artifactId>
-      <version>2.0.13</version>
+      <version>2.0.15</version>
       <optional>true</optional>
     </dependency>
 
@@ -503,7 +503,7 @@
         <java.test.version>16</java.test.version>
         <java.test.release.version>16</java.test.release.version>
         <excludedGroups>TestcontainersTests,RequireIllegalAccess</excludedGroups>
-        <allowed.build.jdks>[11,12),[17,18),[21,22),[22,23),[23,24)</allowed.build.jdks>
+        <allowed.build.jdks>[11,12),[17,18),[21,22),[22,23),[23,24),[24,25)</allowed.build.jdks>
       </properties>
     </profile>
     <profile>
